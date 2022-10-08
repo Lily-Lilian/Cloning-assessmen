@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/tailwind.css">
-    <title>Document</title>
+    <title>Universität</title>
 </head>
-<body>
-<div class="flex">
-    <div class="flex overflow-hidden mx-auto justify-between space-x-44 ">
-        <div class="flex cursor-pointer">
-    <img  width="300" src="./images/fu-logo-2x-1fe8a5a6e1a843cb9244b9bf1f886d7d.png">
-</div>
-    <div class="">
-    <ul class="lg:flex hidden space-x-4 mx-2 pt-4 cursor-pointer">
-        <li >Home</li>
+<body class="overflow-x-hidden">
+  <header>
+<div class="flex ">
+    <div class="flex overflow-hidden items-center gap-72  justify-between ">
+    <img width="300" class=" mx-4"  src="./images/fu-logo-2x-1fe8a5a6e1a843cb9244b9bf1f886d7d.png">
+    <ul class="lg:flex gap-3 hidden  hover cursor-pointer">
+        <li >Homepage</li>
         <li>Index</li>
         <li>Contact</li>
         <li>Legal Notice</li>
@@ -25,37 +23,54 @@
     </ul>
 </div>
 </div>
-</div>
-<div class="">
-    <ul class="lg:flex hidden hover justify-end space-x-4 mx-36 cursor-pointer">
-        <li class="border border-box w-24 items-center">EN</li>
-        <li class="border border-box w-24 items-center">Quicklinks</li>
-        <li class="border border-box w-40">Information For</li>
-        <li class="border border-box w-40">Search with Google</li>
+<div class="flex flex-col gap-3">
+    <ul class="lg:flex hidden hover space-x-4 justify-end mr-14 my-2 cursor-pointer">
+        <li class="border border-box w-16 font-bold "><select>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="rw">RW</option>
+      </select></li>
+        <li class="border border-box w-24 items-center"><select>
+          <option value="en">Quicklinks</option>
+      </select></li>
+        <li class="border border-box w-40"><select>
+          <option value="en">Information For</option>
+          <option value="fr">Employees</option>
+          <option value="rw">Refugees</option>
+      </select></li>
+        <li class=" border border-box "><input class="10" type="text" placeholder="Google Search.." name="search"></li>
     </ul>
     </div>
     <div class="pt-4 hover">
-        <div class="bg-gray-200 w-full "><h1 class="mx-6 cursor-pointer" > FREEIE UNIVERSITAT BERLIN</h1></div>
-        <div class="bg-green-400 w-full flex items-center ">
-            <ul class="flex space-x-8 mx-6 cursor-pointer">
-            <li>HOME</li>
+        <div class="bg-gray-300 flex text-center p-2 w-full "><h1 class="mx-6 cursor-pointer text-lg" > FREEIE UNIVERSITAT BERLIN</h1></div>
+        <div class="bg-lime-600 w-full flex items-center text-white  text-xl text-center p-4">
+            <ul class="lg:flex hidden w-full space-x-8 mx-6 cursor-pointer">
+            <li>HOME</li> 
             <li>ABOUT</li>
             <li>RESEARCH</li>
             <li>DEPARTMENT</li>
             <li>INTERNATIONAL</li>
             <li>EXCELLENCE STARTEGY</li>
         </ul>
-        </div>
+        <div class=" flex ">
+          <ul class="flex justify-between gap-72 lg:w-full w-full ">
+      <li class="lg:hidden">MENU</li>
+        <img width="20" class="lg:hidden " src="./images/bars-solid.svg" alt="menu">
+      </ul>
+      </div>
     </div>
+    </div>
+  </header>
     <div class="mx-auto w-11/12 pt-10 pb-20">
         <img src="./images/deutschlandstipendium.jpg">
     </div>
-   <div class="bg-gray-200 ">
-    <h1 class="text-blue-500 pl-10 font-bold pb-10">Corona VIRUS NUMBER</h1>
+   <div class="bg-gray-200 flex w-full h-28 p-4 items-center ">
+    <img class="mx-4" width="20" src="./images/chevron-right-solid (1).svg">
+    <h1 class="text-blue-500 font-bold  text-xl">Coronavirus Pandemic: Current Information for University Members</h1>
    </div>
 <div>
     <div>
-        <h1 class="font-semibold mt-4 bg-sky-100">UNIVERSITY NEWS</h1>
+        <h1 class="font-semibold p-4 bg-sky-100 text-xl">University News</h1>
     <div class="flex flex-wrap -m-4 mx-auto bg-sky-100 overflow-hidden">
         
         <div class="p-4 md:w-1/3 ">
@@ -219,18 +234,15 @@
         </div>
       </div>
     </section>
-
-
-    
     <section class="text-gray-600 body-font bg-neutral-200">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-20 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           
         </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="flex flex-wrap -m-4 ">
+          <div class="p-4  lg:w-1/4 md:w-1/2">
             <div class="h-full flex flex-col items-center ">
-              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./images/foto-dhc.jpg">
+              <img alt="team" class="flex-shrink w-full h-56 object-cover object-center mb-4" src="./images/foto-dhc.jpg">
               <div class="w-full">
                 <h2 class="title-font font-medium text-lg ">leading Process</h2>
                 <p class="mb-4">Freie Universität Berlin hosts four clusters of excellence that are funded through the German government's Excellence Strategy.</p>
@@ -240,7 +252,7 @@
           </div>
           <div class="p-4 lg:w-1/4 md:w-1/2 ">
             <div class="h-full flex flex-col items-center ">
-              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./images/berlin-verbund.png">
+              <img alt="team" class="flex-shrink-0 w-full h-56 object-cover object-center mb-4" src="./images/berlin-verbund.png">
               <div class="w-full">
                 <h2 class="title-font font-medium text-lg text-gray-900">Berlin University Alliance</h2>
                 <p class="mb-4">The three major Berlin universities and Charité – Universitätsmedizin Berlin are creating an integrated research environment and are a driving force in further developing Berlin as a research hub.</p>
@@ -249,7 +261,7 @@
           </div>
           <div class="p-4 lg:w-1/4 md:w-1/2">
             <div class="h-full flex flex-col items-center ">
-              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./images/bologna.jpg">
+              <img alt="team" class="w-full  h-56 object-cover object-center mb-4" src="./images/bologna.jpg">
               <div class="w-full">
                 <h2 class="title-font font-medium text-lg text-gray-900">Una Europa</h2>
                 <p class="mb-4">Highly regarded universities from nine countries in the European Union (EU) have agreed to intensify their cross-border cooperation.</p>
@@ -259,8 +271,88 @@
         </div>
       </div>
     </section>
-    
   </div>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-2 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2 md:w-full">
+          <div class="flex p-4 sm:flex-row flex-col">
+            <div class="flex-grow">
+              <h2 class=" text-lg text-lime-600 title-font font-medium mb-3">AT A GLANCE</h2>
+              <p class="leading-relaxed text-base">Freie Universität Berlin has been one of the German universities of excellence since 2007. The university is leading in research and teaching and has many regional and international partners.</p>
+              <ul class="pt-2">
+                <li class="flex gap-2"><img class="" width="10" src="./images/chevron-right-solid (1).svg">Facts and Figures</li>
+                 <li class="flex gap-2"><img width="10" src="./images/chevron-right-solid (1).svg">Cooperation</li>
+                <li class="flex gap-2"><img width="10" src="./images/chevron-right-solid (1).svg">Founding History</li>
+              </ul>
+           
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2 md:w-full">
+          <div class="flex p-4 sm:flex-row flex-col">
+            <div class="flex-grow">
+              <h2 class="text-lime-600 text-lg title-font font-medium mb-3">PROFESSION AND CAREER</h2>
+              <ul class="pt-2">
+                <li class="flex gap-2"><img  width="10" src="./images/chevron-right-solid (1).svg">Job Offers</li>
+                 <li class="flex gap-2"><img width="10" src="./images/chevron-right-solid (1).svg">Continuing Education</li>
+                <li class="flex gap-2"><img width="10" src="./images/chevron-right-solid (1).svg">Staff Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font bg-gray-200">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-2">
+        
+        <p class="lg:w-2/3 text-start font-bold text-2xl">What Distinguish Us</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0  w-full h-56 object-cover object-center mb-4" src="./images/seite-1-photo-Louvre-box.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Leader in Teaching and Research</h2>
+              <p class="mb-4">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center ">
+            <img alt="team" class="flex-shrink-0  w-full h-56 object-cover object-center mb-4" src="./images/international_.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Student Exchange</h2>
+              <p class="mb-4">What do I have to consider if I am currently taking part in an exchange program or doing an internship? The most important questions and answers for students from Freie Universität and exchange students.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center ">
+            <img alt="team" class="flex-shrink-0  w-full h-56 object-cover object-center mb-4" src="./images/vielfaeltig.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Important Dates and Portals</h2>
+              <p class="mb-4">As the Center for Junior Researchers, Dahlem Research School (DRS) provides a framework for structured graduate education at Freie Universität.</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/4 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0  w-full h-56 object-cover object-center mb-4" src="./images/nachhaltig.jpg">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-gray-900">Doctorate</h2>
+              <p class="mb-4">As the Center for Junior Researchers, Dahlem Research School (DRS) provides a framework for structured graduate education at Freie Universität.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
